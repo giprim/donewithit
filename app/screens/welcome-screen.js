@@ -1,7 +1,7 @@
 import React from 'react';
-import { Image, ImageBackground, StyleSheet, Text, View } from 'react-native';
-import AppButton from '../components/app-button/app-button';
-import AppText from '../components/app-text/app-text';
+import { Image, ImageBackground, StyleSheet, View } from 'react-native';
+import AppButton from '../components/app-button';
+import AppText from '../components/app-text';
 
 function WelcomeScreen(props) {
   return (
@@ -10,7 +10,7 @@ function WelcomeScreen(props) {
       source={require('../assets/background.jpg')}>
       <View style={styles.logoContainer}>
         <Image style={styles.logo} source={require('../assets/favicon.png')} />
-        <Text>Sell What You Don't Need</Text>
+        <AppText fontSize={18}>Sell What You Don't Need</AppText>
       </View>
       <View style={styles.buttonContainer}>
         <AppButton
@@ -40,8 +40,13 @@ const styles = StyleSheet.create({
   },
   logoContainer: {
     position: 'absolute',
-    top: 70,
+    top: 190,
     alignItems: 'center',
+  },
+  logo: {
+    marginBottom: 10,
+    width: 70,
+    height: 70,
   },
 });
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, TouchableOpacity } from 'react-native';
-import AppText from '../app-text/app-text';
+import AppText from './app-text';
 
 function AppButton({ text, onPress, style = {} }) {
   return (
