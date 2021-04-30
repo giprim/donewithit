@@ -1,8 +1,12 @@
 import React from 'react';
 import { StyleSheet, Text } from 'react-native';
 
-const AppText = ({ children, fontSize }) => {
-  return <Text style={[styles.color, { fontSize: fontSize }]}>{children}</Text>;
+const AppText = ({ children, fontSize, color, style }) => {
+  return (
+    <Text style={[styles.color, style, { fontSize: fontSize, color: color }]}>
+      {children}
+    </Text>
+  );
 };
 
 const styles = StyleSheet.create({
