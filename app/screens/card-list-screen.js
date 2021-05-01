@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
 import AppCard from '../components/app-card';
+import AppListItem from '../components/app-list-item';
 
 const CardListScreen = () => {
   return (
@@ -9,6 +10,11 @@ const CardListScreen = () => {
         image={require('../assets/background.jpg')}
         subTitle='$100'
         title='Jacket'
+      />
+      <AppListItem
+        image={require('../assets/background.jpg')}
+        subTitle='4 listings'
+        title='GI Prim'
       />
     </View>
   );

@@ -6,6 +6,7 @@ import AppText from '../components/app-text';
 function WelcomeScreen(props) {
   return (
     <ImageBackground
+      blurRadius={6}
       style={styles.background}
       source={require('../assets/background.jpg')}>
       <View style={styles.logoContainer}>
